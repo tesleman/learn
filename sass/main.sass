@@ -1,0 +1,1182 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+.top-head
+	display: block
+.text-center
+	text-align: center
+
+b, strong
+	font-weight: bold
+.top
+	.top-line
+		position: relative
+		background-color: #040d0d
+		text-align: center
+		height: 40px
+		left: 0
+		right: 0
+		width: 100%
+		.menu
+			margin-top: 8px
+			margin-bottom: 8px
+			position: relative
+			display: flex
+			width: 100%
+			
+			.sf-menu
+
+				margin: auto
+				background-color: transparent
+				float: none
+
+				
+				li 
+					display: inline-block
+					border-left: 1px dotted #73797a
+					background-color: transparent
+					
+					&:first-child
+						border-left: none	
+				a 	
+					font-family: "roboto-Regular" serif
+					font-size: 13px	
+					
+					color: #bcc3c5
+					border: none
+					padding-top: 7px
+					line-height: 3px
+					background-color: #040d0d
+					position: relative
+
+				ul 
+					
+					background-color: #040d0d
+					
+					
+					li 
+						
+						display: table
+						background-color: #040d0d
+						
+.sf-arrows 
+	.sf-with-ul
+		&:after
+			border-top-color: #f15416						
+
+.region
+	font-family: "RobotoLight", serif
+	font-size: 13px
+	margin-top: 15px
+	font-weight: Regular
+	a 
+		text-decoration: underline
+		text-decoration-style: dotted
+
+.logo
+	margin-top: 18px
+	width: 218px
+	position: relative	
+	
+	.logo-img
+		position: relative
+		img 	
+			margin-top: 5px
+			position: relative
+	.logo-bg
+		position: absolute
+		left: 33%
+		background-color: #363e48
+		height: 45px
+		width: 	75px
+		border-radius: 20%
+		z-index: -2
+		
+		opacity: 0.6
+		.logo-mask
+			
+			img 
+				
+				border-radius: 20%
+				z-index: -1
+				opacity: 0.6
+				height: 45px
+				width: 75px
+	.logo-text
+		position: relative
+		
+		span 
+			color: #818588
+			font-family: "RobotoLight", sans-serif
+			font-size: 11px
+			text-transform: uppercase
+			
+.coll-back
+	position: relative
+		
+	
+	display: inline-block
+	height: 65px
+	width: 120px
+	background: url('/img/Shape-2.png'), 50% 50% no-repeat
+	display: flex
+	margin-top: 15%
+	a	
+		margin: auto
+		padding-left: 18px
+		z-index: 2
+		font-size: 12px
+		font-family: "roboto-Regular", serif
+		text-transform: uppercase
+.mobile
+	margin-top: 35px
+	margin-left: 10px
+	.mobile-phone
+		
+		line-height: 20px
+		position: relative
+		font-family: "roboto-Regular", sans-serif
+		font-size: 19px
+		text-transform: uppercase
+		display: inline
+		white-space: nowrap
+	.mobil-after
+		font-size: 12px
+		font-family: "RobotoLight", serif
+	.viber	
+		margin-left: 8px
+		a 
+			font-family: "roboto-Regular", serif
+		img 
+			margin-left: 4px
+			margin-right: 4px
+			margin-top: 2%
+			max-width: 16px
+			max-height: 16px
+			
+			
+		.phone2	
+			font-size: 13px
+			font-family: "Roboto-Regular", serif
+			font-weight: regular
+	a 
+		font-size: 13px
+
+.voip-search
+	display: flex
+	margin-left: 15%
+	margin-top: 15%
+	.rub
+		margin: auto
+	.voip
+		color: #ff5816
+		font-family: "roboto-Regular", sans-serif
+		font-size: 18px
+		text-transform: uppercase
+		font-weight: regular
+		line-height: 18px
+	.voip-elite	
+		font-family: "roboto-Regular" ,serif
+		font-size: 16px
+		line-height: 20px
+		text-transform: uppercase
+		font-weight: regular
+		
+	p 
+		white-space: nowrap	
+	.search-1
+		
+		border: none
+		background-color: #eff0f4
+		width: 250px
+		height: 33px
+		border-radius: 3px	
+	form
+		margin-top: 10px
+	.button
+		float: right
+		margin-top: 4px
+		margin-left: -78px
+		display: inline-block
+		font-family: "RobotoLight" ,serif
+		border: none
+		color: #fff
+		text-decoration: none
+		background-color: #ff5816
+		padding: 2px
+		font-size: 10px
+		line-height: 14px
+		padding: 6px 8px
+		text-transform: uppercase
+		font-weight: 600
+		letter-spacing: 3px
+		border-radius: 2px
+		text-align: center
+		position: relative
+		outline: none
+		transition: background-color .1s ease
+		cursor: pointer
+		&::after
+			transition: background-color .2s ease
+			position: absolute
+			content: ''
+			height: 4px
+			bottom: 0
+			width: 100%
+			background-color: darken($accent, 50%)
+			opacity: .18
+			border-bottom-left-radius: 2px
+			border-bottom-right-radius: 2px
+			left: 0
+		&:focus, &:hover
+			text-decoration: none
+			color: #fff
+		&:hover
+			background-color: lighten($accent, 5%)
+			&::after
+				opacity: .22
+		&:active
+			background-color: darken($accent, 5%)
+			&::after
+				opacity: .32
+
+.cabinet
+	margin-top: 13%
+	margin-left: 15%
+	.login
+		font-size: 12px
+		line-height: 14px
+		a 
+			margin-left: 15px
+			margin-bottom: 5px
+	.basket
+		font-size: 12px
+
+		.basket-bg
+			width: 200px
+			height: 55px
+			border-radius: 4px
+			background-color: #363e48
+			background: url('/img/Layer-751.png')
+			// overflow: hidden
+			.basket-content
+				margin-top: 5px	
+				img 
+					margin: 18px
+				span 
+					line-height: 13px
+					margin-top: 9px
+				h1 
+					font-size: 12px
+					text-transform: uppercase	
+	.basket-down
+		margin-top: 6px
+		font-size: 12px
+		margin-left: 15px
+		.hearth
+			border-bottom: 1px dotted #000
+			
+		.sirkle
+			border-bottom: 1px dotted #000
+			margin-left: 5px
+		
+.menu
+
+
+
+
+
+.top-slider
+	margin-top: 25px
+	.owl-stage-outer
+	
+		border-radius: 8px
+	.button
+
+		font-family: "RobotoLight", serif
+		max-width: 114px
+		z-index: 3
+		display: inline-block
+		border: none
+		color: #fff
+		text-decoration: none
+		background-color: $accent
+		width: 114px
+		height: 50px
+		font-size: 13px
+		text-transform: uppercase
+		font-weight: 600
+		letter-spacing: 3px
+		text-align: center
+		position: relative
+		outline: none
+		transition: background-color .1s ease
+		cursor: pointer
+		&:after
+			transition: background-color .2s ease
+			position: absolute
+			content: ''
+			height: 4px
+			bottom: 0
+			width: 100%
+			background-color: darken($accent, 50%)
+			opacity: .18
+			
+			left: 0
+		&:focus, &:hover
+			text-decoration: none
+			color: #fff
+		&:hover
+			background-color: lighten($accent, 5%)
+			&::after
+				opacity: .22
+		&:active
+			background-color: lighten($accent, 15%)
+			&::after
+				opacity: .32	
+	a 	
+		font-family: "RobotoLight", serif
+		cursor: pointer
+		z-index: 2
+		color: #ffffff
+.owl-nav
+	position: absolute
+	width: 100%
+	height: 50px
+	
+
+	.owl-next
+		position: absolute
+		right: 0
+		height: 50px
+		width: 17px
+		margin-top: -50px
+		background-color: darken($accent, 15%) !important
+		border-top-right-radius: 8px
+		border-bottom-right-radius: 8px
+		background: none
+		outline: none
+		span 
+			color: #ffffff
+		
+
+
+
+		
+	.owl-prev	
+		position: absolute
+		left: 0
+		height: 50px
+		width: 17px
+		margin-top: -50px
+		background-color: darken($accent, 15%) !important
+		border-top-left-radius: 8px
+		border-bottom-left-radius: 8px
+		background: none
+		outline: none
+		span 
+			color: #fff
+
+	.disabled
+		display: none
+
+.top-line-news
+	margin-top: 15px
+	margin-left: -30px
+	.news-title
+		font-size: 22px
+		font-family: "roboto-Regular", serif
+		text-transform: uppercase
+		padding: 15px 0
+		border-bottom: 1px solid #dbdee6
+	.top-propous
+		white-space: nowrap
+		position: absolute
+		bottom: 0
+		width: 100%
+		padding: 15px 40px
+		background-color: #e3e5eb
+		border-radius: 8px
+		font-size: 16px
+		font-family: "TimesNewRomanRegular", serif	
+		font-weight: bold
+		text-transform: uppercase	
+
+.sld-news
+	
+
+	margin-top: 33px
+	.news-item
+		padding-bottom: 40px
+		
+		&::after
+			padding-bottom: 20px
+			position: absolute
+			width: 90%
+			content: ''
+			height: 1px
+			opacity: 0.2
+			border-bottom: 1px dotted #000
+		.news-img			
+			img 	
+				border-radius: 8px	
+				width: 100%
+		.date
+			text-align: center
+			background-color: #fff
+			margin-top: -16px
+			color: $accent
+			span 
+				border-radius: 4px
+				font-size: 20px
+				font-family: "roboto-Regular", sans-serif
+				font-weight: bold
+				padding: 5px
+		.month
+			text-align: center
+			font-weight: regular
+			font-family: "RobotoLight", sans-serif
+			font-size: 12px
+			text-transform: uppercase
+			font-weight: bold
+	.news-url
+		
+		.news-bas
+			line-height: 20px
+			a 
+				font-family: "RobotoMedium", sans-serif
+				font-size: 13px
+				&:hover
+					color: $accent
+				
+		.news-prew
+			line-height: 20px
+			font-family: "RobotoLight", sans-serif	
+			font-size: 13px
+			color: #000000
+			font-weight: bold
+
+
+.slider-midl
+	position: relative
+	.slide-wrap
+		border-radius: 10px	
+	.slide
+		
+		border-radius: 8px
+		overflow: hidden
+		.slide-text
+			margin: 50px 65px
+			position: relative
+			white-space: nowrap
+			h1 
+				text-transform: uppercase
+				position: relative
+				white-space: nowrap
+				color: #ffffff
+				font-family: "RobotoLight", sans-serif
+				font-weight: normal
+				font-size: 26px
+				line-height: 35px
+			span 
+				text-transform: uppercase
+				font-size: 28px
+				line-height: 30px
+				color: $accent
+				font-family: "RobotoMedium", sans-serif
+				font-weight: bold
+
+			h2 
+				position: relative
+				font-family: "RobotoLight", sans-serif
+				color: #ffffff
+				font-size: 15px
+				text-transform: uppercase
+				font-variant: normal
+				margin-bottom: 40px
+
+			li
+				margin: 5px
+				font-family: "Roboto-LightItalic", serif 
+				color: #ffffff
+				font-size: 13px
+				font-variant: thin	
+		.button-white
+			margin-top: 40px
+			display: inline-block
+			border: none
+			color: #d4d4d !important
+			text-decoration: none
+			background-color: lighten(#d6cece, 50%) 
+			padding: 15px 35px
+			font-size: 13px
+			text-transform: uppercase
+			font-weight: 600
+			letter-spacing: 3px
+			border-radius: 5px
+			text-align: center
+			position: relative
+			outline: none
+			transition: background-color .1s ease
+			cursor: pointer
+			font-size: 15px
+			font-family: "RobotoMedium", sans-serif
+			line-height: 15px
+			letter-spacing: normal
+			float: bottom
+			&::after
+				transition: background-color .2s ease
+				position: absolute
+				content: ''
+				height: 4px
+				bottom: 0
+				width: 100%
+				background-color: darken(#fff, 50%)
+				opacity: .18
+				border-bottom-left-radius: 2px
+				border-bottom-right-radius: 2px
+				left: 0
+			&:focus, &:hover
+				text-decoration: none
+				color: #d4d4d
+			&:hover
+				background-color: lighten($accent, 5%)
+				&::after
+					opacity: .22
+			&:active
+				background-color: darken(#fff, 5%)
+				&::after
+					opacity: .32
+
+		.slider-img
+			margin-top: 2px
+			position: absolute
+			right: 0
+			bottom: 0
+			margin-bottom: -65px
+			margin-right: -140px
+			border-radius: 8px
+
+.slick-dots
+	
+	position: absolute
+	right: 0
+	list-style: none
+	margin-top: -40px
+	margin-right: 15px
+	z-index: 999
+	ul,li
+		display: inline
+		margin-right: 5px
+
+		button
+			margin-right: 6px
+			font-size: 0
+			color: transparent
+			border-radius: 5px
+			box-shadow: none
+			background-color: #fff
+			border: none
+			width: 15px
+			height: 15px
+			cursor: pointer
+			outline: none
+	.slick-active
+		button
+			background-color: $accent
+
+.carousel-naw
+	margin-top: -195px
+	position: absolute
+	width: 100%
+	.slider-next
+		position: absolute
+		right: 0
+		cursor: pointer
+		margin-right: 50px
+		margin-top: -45px
+	.slider-prew
+		position: absolute
+		left: 0
+		margin-left: 35px
+		margin-top: -45px
+		cursor: pointer
+
+
+.new
+	margin: 25px 0 
+	.nowinki
+
+		white-space: nowrap
+		left: 0
+		text-transform: uppercase
+		overflow: hidden
+	.a-laine
+		white-space: nowrap	
+		float: right
+		line-height: 25px
+		font-size: 13px
+		float: right
+		font-family: "RobotoLight", sans-serif
+		overflow: hidden
+	.line
+
+		margin-top: 13px
+		height: 1px
+		width: 100%
+		background-color: #D0D0D0
+
+		
+.new-items
+	margin-top: 30px
+	.new-item
+		margin: 25px
+		border: 1px solid #dddddd
+		max-width: 233px
+		border-radius: 8px
+		.new-lable
+			display: flex
+			margin-left: 6px
+			color: #ffffff
+			z-index: 3
+			margin-top: -5px
+			width: 34px
+			height: 43px
+			background-repeat: no-repeat	
+			span 
+				font-size: 12px
+				font-family:  "RobotoMedium", sans-serif
+				margin: auto
+		.item-inside
+			img 
+				margin:  35px 45px
+			
+			a 	
+				margin-left: 20px
+				float: left
+				font-size: 16px
+				line-height: 25px
+				font-family: "RobotoMedium", sans-serif	
+			.prise
+				span
+
+					margin-left: 19px
+					margin-top: 13px
+					margin-right: 5px
+					font-family: "RobotoLight", sans-serif 
+					font-size: 12px
+					
+					
+					
+				.prise-new
+					font-family: "RobotoMedium", sans-serif
+					font-size: 22px
+					font-weight: bold
+					margin-right: 10px
+				.prise-old
+					margin-top: 7px
+					font-family: "RobotoMedium", sans-serif
+					color: $accent
+		.detal
+			a 
+			 font-family: "RobotoLight", sans-serif	
+			 margin-top: 8px
+			 margin-left: 8px
+			 font-size: 13px
+			 text-decoration: underline
+
+
+		.button
+			margin:  0 0 20px 30px
+			display: inline-block
+			border: none
+			color: #d4d4d !important
+			text-decoration: none
+			background-color: $accent
+			padding: 11px 35px
+			font-size: 13px
+			text-transform: uppercase
+			font-weight: 600
+			letter-spacing: 3px
+			border-radius: 5px
+			text-align: center
+			position: relative
+			outline: none
+			transition: background-color .1s ease
+			cursor: pointer
+			font-size: 15px
+			font-family: "RobotoMedium", sans-serif
+			line-height: 15px
+			letter-spacing: normal
+			float: bottom
+			&::after
+				transition: background-color .2s ease
+				position: absolute
+				content: ''
+				height: 4px
+				bottom: 0
+				width: 100%
+				background-color: darken(#fff, 50%)
+				opacity: .18
+				border-bottom-left-radius: 2px
+				border-bottom-right-radius: 2px
+				left: 0
+			&:focus, &:hover
+				text-decoration: none
+				color: #d4d4d
+			&:hover
+				background-color: #4673ab
+				&::after
+					opacity: .22
+			&:active
+				background-color: darken(#fff, 5%)
+				&::after
+					opacity: .32
+			img 
+				color: #ffffff
+				margin: 0
+				width: 20px
+				height: 17px
+			span 
+				color: #ffffff
+				margin: 0  0 0 7px !important
+.carousel-naw-1
+	
+	margin-top: -230px
+	position: absolute
+	width: 100%
+	.slider-next-new
+		position: absolute
+		right: 0
+		cursor: pointer
+		margin-right: 30px
+		margin-top: -45px
+	.slider-prew-new
+		position: absolute
+		left: 0
+
+		margin-top: -45px
+		cursor: pointer
+
+.Action-items
+	margin-top: 30px
+	.new-item
+		outline: 0
+		padding-top: 15px
+		margin: 25px
+		border: 1px solid #dddddd
+		max-width: 233px
+		border-radius: 8px
+		p 
+			font-family: "RobotoLight", sans-serif
+			font-size: 13px
+			font-weight: bold
+			margin: 20px
+		a 
+			font-family: "RobotoMedium", sans-serif	
+			font-size: 16px
+			font-weight: bold
+			margin-left: 15px
+			
+		.item-inside
+			img 
+				margin-bottom: 22px
+				margin-top: 10px
+				width: 100%
+			
+
+			.prise
+				span
+					
+					font-family: "RobotoLight", sans-serif 
+					font-size: 12px
+					margin: 13px
+					
+				.prise-new
+					font-family: "RobotoMedium", sans-serif
+					font-size: 22px
+					font-weight: bold
+					margin-right: 10px
+				.prise-old
+					margin-top: 7px
+					font-family: "RobotoMedium", sans-serif
+					color: $accent
+				
+
+	.contdown-container
+		padding: 8px
+		width: 100%
+		background-color: #dbdee6
+		table
+			margin: auto
+		span 
+			padding-left: 10px
+			margin: auto
+			max-width: 60px
+			line-height: 16px
+			font-size: 13px
+			font-family:  "RobotoMedium", sans-serif
+
+		.time
+			font-family: "RobotoLight", sans-serif
+			bottom: 0
+			font-size: 12px
+			margin-left: 110px
+			margin-top: -5px
+			td 
+				padding: 2px
+				text-align: center
+			
+	.details
+		display: flex
+		padding: 5px
+		a	
+			margin: auto
+			font-family: "RobotoLight", serif !important
+			font-weight: thin
+			font-size: 13px
+
+.carousel-naw-2
+
+	margin-top: -230px
+	position: absolute
+	width: 100%
+	.slider-next-new1
+		position: absolute
+		right: 0
+		cursor: pointer
+		margin-right: 30px
+	.slider-prew-new1
+		position: absolute
+		left: 0
+
+		
+		cursor: pointer
+
+
+
+.what-item
+	
+	.item-img
+		margin: 15px
+		float: right
+		
+	.item-url
+		font-family: "RobotoMedium", sans-serif	
+		font-size: 16px
+		font-weight: bold
+		margin: 15px
+.brends
+	margin-bottom: 25px
+
+.our-strong-sides
+	background-color: #e3e5eb
+	border-radius: 8px
+	width: 100%
+	.our-lein
+		position: absolute
+		width: 100%
+		height: 1px
+		background-color: #fff
+		margin-top: 46px
+		margin-left: -35px
+	.our-text
+		font-family: "RobotoMedium", sans-serif
+		font-variant: bolder
+		font-size: 22px
+		margin-top: 30px
+		margin-left: 15px
+		white-space: nowrap
+		text-transform: uppercase
+	.our-item	
+		.our-img
+			padding-top: 50px
+			text-align: center
+			background-repeat: no-repeat
+			img
+				margin-bottom: 40px
+		.our-item-text
+			text-align: center
+			font-size: 12px
+			font-family: "RobotoMedium", sans-serif
+			text-transform: uppercase
+			margin: 0 15px
+			padding-bottom: 35px
+			
+.conkurent
+	border: 1px #f6bdbf solid
+	border-radius: 10px
+	.head-block
+		padding-bottom: 15px
+		background-color: #cb0b13
+		border-top-left-radius: 10px
+		border-top-right-radius: 10px
+		.head-block-text
+			
+			padding-top: 27px
+			margin-left: 25px
+			font-family: "RobotoMedium", sans-serif
+			font-size: 15px
+			line-height: 21px
+			color: #ffffff
+			text-transform: uppercase
+		
+
+			img
+				margin: 5px
+				display: block
+				float: left	
+	.conkurent-text
+		margin-top: 25px
+		ul 
+			list-style-position: outside
+			li 
+				color: red 
+				font-family: "RobotoLight", sans-serif
+				
+				
+				&::before
+					
+					color: red /* Цвет маркера */
+					
+					padding-right: 3px /* Расстояние от маркера до текста */
+
+					
+				
+				.li-text 
+					font-family: "RobotoLight", sans-serif
+					color: black
+					font-weight: 500
+					font-size: 15px
+					line-height: 20px
+					span 
+						font-weight: bolder
+						color: black
+.our-side
+	border: 1px #dbefdf solid
+	border-radius: 10px
+	.head-block
+		padding-bottom: 15px
+		background-color: #16a333
+		border-top-left-radius: 10px
+		border-top-right-radius: 10px
+		.head-block-text
+	
+			padding-top: 27px
+			margin-left: 25px
+			font-family: "RobotoMedium", sans-serif
+			font-size: 15px
+			line-height: 35px
+			color: #ffffff
+			text-transform: uppercase
+			span 
+			
+			img
+				margin: 10px
+				display: block
+				float: left	
+
+	.our-side-text
+		margin-top: 25px
+		ul 
+			list-style-position: outside
+			li 
+				color: green
+				font-family: "RobotoLight", sans-serif
+				
+				.li-text 
+					font-family: "RobotoLight", sans-serif
+					color: black
+					font-weight: 500
+					font-size: 15px
+					line-height: 20px
+					span 
+						font-weight: bolder
+						color: black
+
+
+
+.numbers 
+	
+	
+	ul 
+		padding: 0
+		
+		
+		li	
+			margin-left: 20px 
+			list-style-type: none
+			display: inline-block
+			.number-round
+				display: flex
+				width: 135px
+				height: 135px
+				border: 1px #394a5c solid
+				border-radius: 50%
+				vertical-align: middle
+				.number
+					margin: auto
+					font-size: 60px
+					color: $accent
+
+			&:nth-child(2n)
+				.number-round
+					.number
+						color: #394a5c !important
+			&:nth-child(2)
+				.number-round
+					
+					.number
+						font-size: 50px		
+						
+	$background: #ffff
+$tabs-base-color: #ffff					
+	 
+.tabs-sec
+	height: 600px
+	.tabs
+		width: 650px
+		float: none
+		list-style: none
+		position: relative
+		margin: 80px 0 0 10px
+		text-align: left
+
+
+		li
+			float: left
+			display: block
+			outline: none
+		input[type="radio"]
+			position: absolute
+			top: 0
+			left: -9999px
+			border-radius: 15px
+			outline: none
+		label
+
+			display: block
+			padding: 14px 21px
+			border-radius: 2px 2px 0 0
+			font-size: 20px
+			font-weight: normal
+			text-transform: uppercase
+			background: $tabs-base-color
+			cursor: pointer
+			position: relative
+			top: 4px
+			outline: none
+			+transition(all 0.2s ease-in-out)
+
+
+
+		.tab-content
+			z-index: 2
+			display: none
+			overflow: hidden
+			width: 100%
+			font-size: 17px
+			line-height: 25px
+			padding: 25px
+			position: absolute
+			top: 53px
+			left: 0
+
+
+		//The Magic
+		[id^="tab"]:checked + label
+			top: 0
+			padding-top: 17px
+			border-radius: 15px
+			outline: none
+			background: darken($tabs-base-color, 15)
+
+
+		[id^="tab"]:checked ~ [id^="tab-content"]
+			display: block
+			border-radius: 15px
+			outline: none
+
+		p.link
+			clear: both
+			margin: 380px 0 0 15px
+
+		a
+			text-transform: uppercase
+			text-decoration: none
+			display: inline-block
+			color: #fff
+			padding: 5px 10px
+			margin: 0 5px
+			background-color: darken($tabs-base-color, 15)
+			outline: none
+			+transition(all 0.2s ease-in)
+
+		
+.bottom-text
+	font-family: "RobotoLight", serif
+	font-size: 15px
+
+.footer
+	background-color: #5c7489
+	padding-bottom: 40px
+	.logo-copy
+		margin-top: 40px
+
+	span
+		margin-top: 30px
+		display: block
+		font-family: "RobotoLight", serif
+		font-size: 13px
+		text-align: left
+		color: #ffffff
+		opacity: 0.8
+	p 
+		margin-top: 40px
+		font-family: "RobotoLight", serif
+		font-size: 13px
+		text-align: left
+		color: #ffffff
+		opacity: 0.8
+	ul 
+		margin-top: 40px
+		li 
+			list-style: none
+			a 
+				text-decoration: underline
+				font-family: "RobotoLight", serif
+				font-size: 13px
+				text-align: left
+				color: #ffffff
+				opacity: 0.8
+@import "media" // Always at the end
