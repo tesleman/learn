@@ -122,7 +122,7 @@ $(function() {
 
 
 	$(function(){
-		var NY = Math.round((new Date('3/28/2020 18:16:00')).getTime()/1000);
+		var NY = Math.round((new Date('5/28/2020 18:16:00')).getTime()/1000);
 		$('.countdown').flipcountdown({
 		size:'xs',
 		tick:function(){
